@@ -6,14 +6,5 @@ import (
 )
 
 func main() {
-    rootCmd, _ := cosmoscmd.NewRootCmd(
-        app.Name,
-        app.AccountAddressPrefix,
-        app.DefaultNodeHome,
-        app.Name,
-        app.ModuleBasics,
-        app.New,
-        // this line is used by starport scaffolding # root/arguments
-        // cmdOptions...,
-	  )
+    rootCmd, _ := NewRootCmd()
 }
