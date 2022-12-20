@@ -13,4 +13,3 @@ BUILD_FLAGS := -ldflags '$(ldflags)'
 install: go.sum
 	@echo "--> Installing Uro token"
 	@go build  $(BUILD_FLAGS) ./cmd/uro
-
