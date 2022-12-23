@@ -1,6 +1,7 @@
-package uro
+package module
 
 import (
+  "github.com/bui-duc-huy/uro-token/x/uro"
   "github.com/cosmos/cosmos-sdk/codec"
   "github.com/bui-duc-huy/uro-token/x/uro/types"
   "github.com/bui-duc-huy/uro-token/x/uro/keeper"
@@ -20,9 +21,11 @@ func (AppModuleBasic) Name() string {
 }
 
 func (AppModuleBasic) RegisterCodec(cdc *codec.LegacyAmino) {
+  uro.RegisterCodec(cdc)
 }
 
 func (AppModuleBasic) RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
+  uro.RegisterLegacyAminoCodec(cdc);
 }
 
 // RegisterInterfaces registers the module's interface types

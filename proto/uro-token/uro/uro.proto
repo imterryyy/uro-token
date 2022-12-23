@@ -1,0 +1,6 @@
+syntax="proto3";
+package uro_token.uro;
+
+message Message {
+  string msg = 1 [ (gogoproto.moretags) = "yaml:\"msg\"" ];
+}
