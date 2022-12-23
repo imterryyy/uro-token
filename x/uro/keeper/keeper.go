@@ -40,5 +40,6 @@ func (k Keeper) GetMessage(ctx sdk.Context, owner sdk.AccAddress) uro.Message {
   bz := store.Get(MessageKey(owner))
 
   if bz == nil {
+
   }
 }
